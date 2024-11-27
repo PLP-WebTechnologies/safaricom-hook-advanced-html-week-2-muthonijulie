@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>REGISTRATION FORM</title>
+  </head>
+  <body>
+    <form action="/action_page.php" method="POST">
+      <fieldset>
+        <legend>REGISTER HERE</legend>
+        <label for="FName">Full Name</label><br /><br />
+        <input
+          type="text"
+          name="FName"
+          placeholder="Enter your full name"
+          required
+        /><br /><br />
+        <label for="email">Email</label><br /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email"
+          required
+        /><br /><br />
+        <label for="passwd">Password</label><br /><br />
+        <input
+          type="password"
+          name="passwd"
+          minlength="8"
+          maxlength="20"
+          placeholder="Enter password"
+          required
+        /><br /><br />
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="age"
+          placeholder="Enter age"
+          min="18"
+          max="100"
+          required
+        /><br /><br />
+        <label for="gender">Gender</label><br />
+        <input type="radio" name="gender" />
+        <label for="gender">Male</label><br /><br />
+        <input type="radio" name="gender" />
+        <label for="gender">Female</label><br /><br />
+        <input type="checkbox" name="terms" required />
+        <label for="terms">I agree with the terms and condition.</label
+        ><br /><br />
+        <button type="submit">REGISTER</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

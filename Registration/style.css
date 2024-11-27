@@ -1,0 +1,8 @@
+body{
+    background-color: brown;
+}
+form{
+    margin:5%;
+    padding:5%;
+    justify-items: center;
+}
